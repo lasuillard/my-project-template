@@ -8,3 +8,7 @@ pipx install pre-commit
 
 # Install dotenvx; https://github.com/dotenvx/dotenvx
 curl --silent --fail --show-error https://dotenvx.sh | sudo sh
+
+# TODO(starter-template): uv is used for example Python application for demonstration purposes.
+#                         Update this section to meet your project's requirements.
+pipx install uv

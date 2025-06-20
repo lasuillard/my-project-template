@@ -1,0 +1,16 @@
+{
+    // I recommend you to sync this file with your `.devcontainer/devcontainer.json`,
+    // `$.customizations.vscode.extensions` configuration.
+    "recommendations": [
+        "EditorConfig.EditorConfig",
+        "streetsidesoftware.code-spell-checker",
+        // TODO(starter-template): Update the extensions list to match your project needs.
+        "astral-sh.ty",
+        "charliermarsh.ruff",
+        "ms-python.debugpy",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "VisualStudioExptTeam.vscodeintellicode",
+    ]
+}

@@ -1,0 +1,16 @@
+// Workspace settings applied for both the host and the dev container.
+// ! You shouldn't keep your personal settings here, as they will be applied to all contributors.
+// ! Instead, utilize your user settings or check out [VS Code Workspace](https://code.visualstudio.com/docs/editing/workspaces/workspaces)
+// ! to create a workspace with modifications you want to apply to the workspace.
+{
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "cspell.words": [
+        // Put your custom words here to share with the team.
+    ],
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.testing.pytestArgs": [
+        "-vv", // This will help you see more detailed output in the test results on test panel
+    ]
+}

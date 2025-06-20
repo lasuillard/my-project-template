@@ -36,20 +36,23 @@
     "customizations": {
         "vscode": {
             // List of VS Code extensions to install in the container
+            // I recommend you to sync this file with your `.vscode/extensions.json`
             // ! Extensions listed here WILL BE INSTALLED, unlike `.vscode/extensions.json`
             // ! only provides recommendations.
             // ! So be sure to list only the extensions all the contributors SHOULD use.
+            // * If you have personal extensions that you want install for all dev containers,
+            // * edit `dev.containers.defaultExtensions` in your user settings instead.
             "extensions": [
+                "EditorConfig.EditorConfig",
                 "streetsidesoftware.code-spell-checker",
-                "EditorConfig.EditorConfig"
-                // Based on the project toolchain, I would add something like (e.g. Python):
-                // "charliermarsh.ruff",
-                // "ms-python.debugpy",
-                // "ms-python.mypy-type-checker",
-                // "ms-python.python",
-                // "VisualStudioExptTeam.vscodeintellicode"
-                // ... If you have personal extensions that you want install for all dev containers,
-                // edit `dev.containers.defaultExtensions` in your user settings instead.
+                // TODO(starter-template): Update the extensions list to match your project needs.
+                "astral-sh.ty",
+                "charliermarsh.ruff",
+                "ms-python.debugpy",
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-toolsai.jupyter",
+                "VisualStudioExptTeam.vscodeintellicode"
             ]
         }
     }
