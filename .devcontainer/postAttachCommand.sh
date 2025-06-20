@@ -11,5 +11,7 @@ and you can start working on the project right away.
 - Check for the \`README.md\` file for more information on how to get started.
 - Simply type \`make\` to run the default tasks.
 - If you need help, refer to the documentation or ask in the project chat.
+- If it's your first time using this container, start a Copilot chat session using mode "Onboarding support"
+  to help you to get familiar with the environment.
 
 WELCOME
