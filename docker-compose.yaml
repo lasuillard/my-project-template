@@ -1,0 +1,24 @@
+# You can add `.env` file and define environment variables there
+# to override the default values below.
+
+services:
+  # You can add any any services you need for your development environment here.
+  # But to add dev container only services, edit the `.devcontainer/docker-compose.devcontainer.yaml` file instead.
+  localstack:
+    image: localstack/localstack:4
+    # Use `profiles` to define which services should run in different development profiles.
+    # For example, you can have a `celery` profile for background tasks, which generally includes Redis and Celery Worker.
+    # You can change `COMPOSE_PROFILES` environment variable in `.env` files to control which profiles are active,
+    # reducing the number of services running in your development environment at any time.
+    profiles:
+      # This profile can be enabled by setting `COMPOSE_PROFILES=localstack` in your `.env` file.
+      - aws
+    ports:
+      - ${LOCALSTACK_GATEWAY_HOST:-127.0.0.1}:${LOCALSTACK_GATEWAY_PORT:-4566}:4566
+      - ${LOCALSTACK_EXTERNAL_SERVICES_HOST:-127.0.0.1}:${LOCALSTACK_EXTERNAL_SERVICES_PORT_RANGE:-4510-4559}:4510-4559
+    volumes:
+      - localstack-data:/var/lib/localstack
+      - /var/run/docker.sock:/var/run/docker.sock
+
+volumes:
+  localstack-data:

@@ -1,0 +1,42 @@
+# You can add `.devcontainer/.env` file and define environment variables there
+# to override the default values below.
+
+services:
+  # This is your main development container to work in.
+  workspace:
+    # You could use `image` directly if you have a preferred pre-built image.
+    # But by using `build`, you can customize the Dockerfile as needed.
+    build:
+      context: .
+      dockerfile: ./.devcontainer/Dockerfile
+    volumes:
+      # TODO(starter-template): Replace with your repository name
+      - .:/workspaces/devcontainer-starter-template
+    extra_hosts:
+      # Access to the host machine from the container using `host.docker.internal`.
+      - host.docker.internal:host-gateway
+    environment:
+      # `CONTAINER` is often useful for distinguishing your working environment.
+      # You can use it in your scripts to check if you're in a dev container.
+      CONTAINER: 1
+      DISPLAY: "${DISPLAY:-novnc:0.0}"
+
+      # You can add more environment variables here as needed.
+      # ...
+
+    # Generally, health check is not needed for development containers.
+    healthcheck:
+      disable: true
+
+  # This service provides a noVNC web interface to access the workspace container.
+  # If you don't need a display, you can remove this service.
+  novnc:
+    image: theasp/novnc@sha256:baef5751fdf8416f4729c5cb09ff565b6eabf6079e1919e9aab71eecf1824eac
+    environment:
+      DISPLAY_WIDTH: "${NOVNC_DISPLAY_WIDTH:-1440}"
+      DISPLAY_HEIGHT: "${NOVNC_DISPLAY_HEIGHT:-1080}"
+    ports:
+      # You can access it via http://localhost:8080 in your browser with default settings.
+      # If you are running dev container on a remote server, you might need to adjust the `NOVNC_HOST` and `NOVNC_PORT`
+      # environment variables in the `.env` file.
+      - "${NOVNC_HOST:-127.0.0.1}:${NOVNC_PORT:-8080}:8080"

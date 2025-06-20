@@ -1,0 +1,56 @@
+// https://containers.dev/implementors/json_reference
+{
+    // TODO(starter-template): Replace with your repository name
+    "name": "lasuillard/devcontainer-starter-template",
+    // I recommend to use VS Code's default automatic port forwarding instead
+    // "forwardPorts": [],
+    "dockerComposeFile": [
+        "../docker-compose.yaml",
+        "./docker-compose.devcontainer.yaml"
+    ],
+    "service": "workspace",
+    // TODO(starter-template): Replace with your repository name
+    "workspaceFolder": "/workspaces/devcontainer-starter-template",
+    "shutdownAction": "stopCompose",
+    "features": {
+        // TODO(starter-template): Edit features as you need (see https://containers.dev/features for available features)
+        "ghcr.io/devcontainers/features/python:1.7.1": {}, // For pipx (pre-commit, dotenvx)
+        "ghcr.io/devcontainers/features/docker-in-docker:2.12.2": {} // Isolated Docker environment from the host machine
+    },
+    // This make the workspace container to run indefinitely, otherwise, based on the image you use,
+    // the container could stop after the command is executed, that must not be a typical behavior
+    // for a development container.
+    "overrideCommand": true,
+    // Below are dev container lifecycle commands, listed in the order they are executed.
+    // * Be sure to check the executable permissions of the scripts you use.
+    // ! `initializeCommand` runs on the **host machine** during initialization.
+    // ! If you are using various OS including Windows, you should be aware of the
+    // ! this configuration's behavior.
+    // "initializeCommand": "...",
+    // These commands run in the container, not on the host machine.
+    "onCreateCommand": "./.devcontainer/onCreateCommand.sh",
+    "updateContentCommand": "./.devcontainer/updateContentCommand.sh",
+    "postCreateCommand": "./.devcontainer/postCreateCommand.sh",
+    "postStartCommand": "./.devcontainer/postStartCommand.sh",
+    "postAttachCommand": "./.devcontainer/postAttachCommand.sh",
+    "customizations": {
+        "vscode": {
+            // List of VS Code extensions to install in the container
+            // ! Extensions listed here WILL BE INSTALLED, unlike `.vscode/extensions.json`
+            // ! only provides recommendations.
+            // ! So be sure to list only the extensions all the contributors SHOULD use.
+            "extensions": [
+                "streetsidesoftware.code-spell-checker",
+                "EditorConfig.EditorConfig"
+                // Based on the project toolchain, I would add something like (e.g. Python):
+                // "charliermarsh.ruff",
+                // "ms-python.debugpy",
+                // "ms-python.mypy-type-checker",
+                // "ms-python.python",
+                // "VisualStudioExptTeam.vscodeintellicode"
+                // ... If you have personal extensions that you want install for all dev containers,
+                // edit `dev.containers.defaultExtensions` in your user settings instead.
+            ]
+        }
+    }
+}
