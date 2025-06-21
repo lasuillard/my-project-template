@@ -27,6 +27,7 @@ This repository is project template based on GitHub, GitHub Copilot and Visual S
   - [`pre-commit`](https://pre-commit.com/) to manage Git hooks
   - [`dotenvx`](https://dotenvx.com/) to run commands with environment variables from a `.env` file
   - `make` to manage project tasks
+  - Codecov to upload test results and code coverage
 
 ## 🏁 Getting started
 
