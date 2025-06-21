@@ -17,3 +17,13 @@ dev = [
     "ruff>=0.12.0",
     "ty>=0.0.1a11",
 ]
+
+[tool.pytest.ini_options]
+addopts = [
+    "--cov",
+    "--cov-report=term",
+]
+
+[tool.coverage.run]
+include = ["src/*"]
+omit = ["test_*.py"]
