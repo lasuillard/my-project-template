@@ -16,6 +16,8 @@ on:
       - .devcontainer/**
       - .github/workflows/devcontainer.yaml
       - docker-compose.yaml
+  schedule:
+    - cron: 0 0 1 * * # At midnight on the first day of every month
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -31,3 +33,4 @@ jobs:
         uses: devcontainers/ci@v0.3
         with:
           runCmd: echo "Dev container is running successfully."
+          push: never
