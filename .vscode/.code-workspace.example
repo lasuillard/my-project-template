@@ -1,0 +1,14 @@
+// Use this file to override the default settings for your workspace.
+// To open this workspace, use "File: Open Workspace from File" in the Command Palette.
+//
+// https://code.visualstudio.com/docs/editing/workspaces/multi-root-workspaces
+{
+    "folders": [
+        {
+            "path": ".."
+        }
+    ],
+    "settings": {
+        // ... Specify your overrides here
+    }
+}
