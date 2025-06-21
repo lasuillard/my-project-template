@@ -24,8 +24,7 @@
     // Below are dev container lifecycle commands, listed in the order they are executed.
     // * Be sure to check the executable permissions of the scripts you use.
     // ! `initializeCommand` runs on the **host machine** during initialization.
-    // ! If you are using various OS including Windows, you should be aware of the
-    // ! this configuration's behavior.
+    // ! If you are using various OS including Windows, you should be aware of the this configuration's behavior.
     // "initializeCommand": "...",
     // These commands run in the container, not on the host machine.
     "onCreateCommand": "./.devcontainer/onCreateCommand.sh",
@@ -37,15 +36,14 @@
         "vscode": {
             // List of VS Code extensions to install in the container
             // I recommend you to sync this file with your `.vscode/extensions.json`
-            // ! Extensions listed here WILL BE INSTALLED, unlike `.vscode/extensions.json`
-            // ! only provides recommendations.
+            // ! Extensions listed here WILL BE INSTALLED, unlike `.vscode/extensions.json` only provides recommendations.
             // ! So be sure to list only the extensions all the contributors SHOULD use.
             // * If you have personal extensions that you want install for all dev containers,
             // * edit `dev.containers.defaultExtensions` in your user settings instead.
             "extensions": [
                 "EditorConfig.EditorConfig",
                 "streetsidesoftware.code-spell-checker",
-                // TODO(starter-template): Update the extensions list to match your project needs.
+                // TODO(starter-template): Below is just an example configuration. Update it as needed.
                 "astral-sh.ty",
                 "charliermarsh.ruff",
                 "ms-python.debugpy",
