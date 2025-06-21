@@ -25,6 +25,7 @@ concurrency:
 
 jobs:
   devcontainer:
+    name: Validate Dev Container
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
