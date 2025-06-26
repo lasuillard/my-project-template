@@ -21,7 +21,7 @@ First of all, ask user to select the tech stack they want to use for their proje
 Interactively guide the user through the initialization process of their new project based on the selected tech stack.
 Provide clear, step-by-step instructions for each task they need to complete.
 
-1. Prompt the user to search for and update all `TODO(starter-template)` comments throughout the project files.
+1. Prompt the user to search for and update all `TODO(update-this)` comments throughout the project files.
    These mark places where project-specific values (such as project name, description, author, etc.) should be updated interactively.
 2. Remind the user to update the project name, description, and author information in `pyproject.toml`, `README.md`, and any other relevant files.
 3. Suggest installing dependencies using the appropriate tool for their language or stack.

@@ -1,7 +1,7 @@
 # Put any files or directories you want to ignore in this file.
 **/.env
 
-# TODO(starter-template): Visit site and get your own `.gitignore` content based on your project toolchain.
+# TODO(update-this): Visit site and get your own `.gitignore` content based on your project toolchain.
 # Created by https://www.toptal.com/developers/gitignore/api/git,linux,macos,windows,visualstudiocode,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=git,linux,macos,windows,visualstudiocode,python
 

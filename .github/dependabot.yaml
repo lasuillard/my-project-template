@@ -11,7 +11,7 @@ updates:
     schedule:
       interval: monthly
 
-  # TODO(starter-template): Below is an example configuration for current template's example Python application
+  # TODO(update-this): Below is an example configuration for current template's example Python application
   #                         Update it to match your project's requirements.
   - package-ecosystem: uv
     directory: /

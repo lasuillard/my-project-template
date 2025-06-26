@@ -1,5 +1,5 @@
 [project]
-name = "devcontainer-starter-template"
+name = "my-project-template"
 version = "0.1.0"
 description = "My project starter template with Dev Container configured."
 readme = "README.md"

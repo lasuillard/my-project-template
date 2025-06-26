@@ -1,9 +1,9 @@
-# devcontainer-starter-template
+# my-project-template
 
-<!-- TODO(starter-template): Update badges as you need to reflect your project status -->
-[![CI](https://github.com/lasuillard/devcontainer-starter-template/actions/workflows/ci.yaml/badge.svg)](https://github.com/lasuillard/devcontainer-starter-template/actions/workflows/ci.yaml)
-[![Dev Container](https://github.com/lasuillard/devcontainer-starter-template/actions/workflows/devcontainer.yaml/badge.svg)](https://github.com/lasuillard/devcontainer-starter-template/actions/workflows/devcontainer.yaml)
-[![codecov](https://codecov.io/gh/lasuillard/devcontainer-starter-template/graph/badge.svg?token=iKNLWbgUtD)](https://codecov.io/gh/lasuillard/devcontainer-starter-template)
+<!-- TODO(update-this): Update badges as you need to reflect your project status -->
+[![CI](https://github.com/lasuillard/my-project-template/actions/workflows/ci.yaml/badge.svg)](https://github.com/lasuillard/my-project-template/actions/workflows/ci.yaml)
+[![Dev Container](https://github.com/lasuillard/my-project-template/actions/workflows/devcontainer.yaml/badge.svg)](https://github.com/lasuillard/my-project-template/actions/workflows/devcontainer.yaml)
+[![codecov](https://codecov.io/gh/lasuillard/my-project-template/graph/badge.svg?token=iKNLWbgUtD)](https://codecov.io/gh/lasuillard/my-project-template)
 
 My project starter template with Dev Container.
 
@@ -38,8 +38,8 @@ This project is designed to help you get started with a Dev Container setup quic
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/lasuillard/devcontainer-starter-template.git
-    cd devcontainer-starter-template
+    git clone https://github.com/lasuillard/my-project-template.git
+    cd my-project-template
     ```
 
     Or, create new repository from this template, following GitHub documentation: [Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
@@ -56,7 +56,7 @@ This project is designed to help you get started with a Dev Container setup quic
 
 5. Look around the project structure and explore the provided files.
 
-6. Edit the files to suit your needs. Search `TODO(starter-template)` in the codebase and replace it with your own content.
+6. Edit the files to suit your needs. Search `TODO(update-this)` in the codebase and replace it with your own content.
 
 ### ☁️ GitHub Codespaces
 

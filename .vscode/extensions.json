@@ -4,7 +4,7 @@
     "recommendations": [
         "EditorConfig.EditorConfig",
         "streetsidesoftware.code-spell-checker",
-        // TODO(starter-template): Update the extensions list to match your project needs.
+        // TODO(update-this): Update the extensions list to match your project needs.
         "astral-sh.ty",
         "charliermarsh.ruff",
         "ms-python.debugpy",

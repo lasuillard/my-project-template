@@ -1,7 +1,7 @@
 // https://containers.dev/implementors/json_reference
 {
-    // TODO(starter-template): Replace with your repository name
-    "name": "lasuillard/devcontainer-starter-template",
+    // TODO(update-this): Replace with your repository name
+    "name": "lasuillard/my-project-template",
     // I recommend to use VS Code's default automatic port forwarding instead
     // "forwardPorts": [],
     "dockerComposeFile": [
@@ -9,13 +9,13 @@
         "./docker-compose.devcontainer.yaml"
     ],
     "service": "workspace",
-    // TODO(starter-template): Replace with your repository name
-    "workspaceFolder": "/workspaces/devcontainer-starter-template",
+    // TODO(update-this): Replace with your repository name
+    "workspaceFolder": "/workspaces/my-project-template",
     "shutdownAction": "stopCompose",
     "features": {
         "ghcr.io/devcontainers/features/python:1.7.1": {}, // For pipx (pre-commit, dotenvx)
         "ghcr.io/devcontainers/features/docker-in-docker:2.12.2": {} // Isolated Docker environment from the host machine
-        // TODO(starter-template): Add features as you need (see https://containers.dev/features for available features)
+        // TODO(update-this): Add features as you need (see https://containers.dev/features for available features)
     },
     // This make the workspace container to run indefinitely, otherwise, based on the image you use,
     // the container could stop after the command is executed, that must not be a typical behavior
@@ -43,7 +43,7 @@
             "extensions": [
                 "EditorConfig.EditorConfig",
                 "streetsidesoftware.code-spell-checker",
-                // TODO(starter-template): Below is just an example configuration. Update it as needed.
+                // TODO(update-this): Below is just an example configuration. Update it as needed.
                 "astral-sh.ty",
                 "charliermarsh.ruff",
                 "ms-python.debugpy",

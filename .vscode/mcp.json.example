@@ -11,7 +11,7 @@
     "inputs": [],
     // You can check https://mcpservers.org/ for available MCP servers
     "servers": {
-        // TODO(starter-template): Below is just an example configuration. Update it as needed.
+        // TODO(update-this): Below is just an example configuration. Update it as needed.
         "server-time": {
             "command": "uvx",
             "args": [
