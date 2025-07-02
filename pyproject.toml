@@ -18,6 +18,9 @@ dev = [
     "ty>=0.0.1a11",
 ]
 
+[tool.uv]
+default-groups = ["dev"]
+
 [tool.pytest.ini_options]
 addopts = ["--cov", "--cov-report=term"]
 markers = [

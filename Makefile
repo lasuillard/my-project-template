@@ -26,13 +26,13 @@ init:  ## Initialize the project workspace
 install:  ## Install deps
 	# TODO(update-this): Update this section to install your project's dependencies
 	uv python install
-	uv sync --frozen --all-extras
+	uv sync --frozen --all-groups
 .PHONY: install
 
 update:  ## Update deps and tools
 	pre-commit autoupdate
 	# TODO(update-this): Update this section to update your project's dependencies
-	uv sync --upgrade --all-extras
+	uv sync --upgrade --all-groups
 .PHONY: update
 
 run:  ## Run application
