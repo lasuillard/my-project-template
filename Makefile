@@ -37,7 +37,7 @@ update:  ## Update deps and tools
 
 run:  ## Run application
 	# TODO(update-this): Update this section to run your project's application
-	uv run python ./main.py
+	dotenvx run uv run python ./main.py
 .PHONY: run
 
 
