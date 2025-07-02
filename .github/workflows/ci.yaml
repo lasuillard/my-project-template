@@ -30,7 +30,7 @@ jobs:
           enable-cache: true
 
       - name: Install deps
-        run: uv sync --all-groups
+        run: uv sync
 
       - name: Check formatting
         run: uv run ruff format --check
@@ -57,7 +57,7 @@ jobs:
           enable-cache: true
 
       - name: Install deps
-        run: uv sync --all-groups
+        run: uv sync
 
       - name: Run tests
         run: uv run pytest --cov-report=xml --junitxml=junit.xml
