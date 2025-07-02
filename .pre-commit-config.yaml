@@ -1,6 +1,8 @@
+# Exclude files and directories from pre-commit checks (addition to the default excludes)
 exclude: |
   (?x)(
-      # Put your regex patterns here to exclude files from pre-commit checks
+    src/generated/.*
+    | src/third_party/.*
   )
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
