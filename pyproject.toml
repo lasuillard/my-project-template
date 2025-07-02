@@ -19,9 +19,10 @@ dev = [
 ]
 
 [tool.pytest.ini_options]
-addopts = [
-    "--cov",
-    "--cov-report=term",
+addopts = ["--cov", "--cov-report=term"]
+markers = [
+    "unit: mark tests as unit tests",
+    "integration: mark tests as integration tests",
 ]
 
 [tool.coverage.run]
