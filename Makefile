@@ -36,7 +36,8 @@ update:  ## Update deps and tools
 
 run:  ## Run application
 	# TODO(update-this): Update this section to run your project's application
-	dotenvx run uv run python ./main.py
+	dotenvx run -- uv run uvicorn main:app \
+		--host "$$([ -n "$$CONTAINER" ] && echo '0.0.0.0' || echo '127.0.0.1')"
 .PHONY: run
 
 
