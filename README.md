@@ -29,11 +29,11 @@ This repository is project template based on GitHub, GitHub Copilot and Visual S
   - `make` to manage project tasks
   - Codecov to upload test results and code coverage
 
-## 🏁 Getting started
+## 🏁 Getting Started
 
 This project is designed to help you get started with a Dev Container setup quickly.
 
-### 💻 Running locally
+### 💻 Running Locally
 
 1. Clone the repository:
 
