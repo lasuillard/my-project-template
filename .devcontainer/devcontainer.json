@@ -1,7 +1,6 @@
 // https://containers.dev/implementors/json_reference
 {
-    // TODO(update-this): Replace with your repository name
-    "name": "lasuillard/my-project-template",
+    "name": "${localEnv:USER}/${localWorkspaceFolderBasename}",
     // I recommend to use VS Code's default automatic port forwarding instead
     // "forwardPorts": [],
     "dockerComposeFile": [
@@ -9,8 +8,10 @@
         "./docker-compose.devcontainer.yaml"
     ],
     "service": "workspace",
-    // TODO(update-this): Replace with your repository name
-    "workspaceFolder": "/workspaces/my-project-template",
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/workspaces/${localWorkspaceFolderBasename},type=bind,consistency=cached"
+    ],
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
     "shutdownAction": "stopCompose",
     "features": {
         "ghcr.io/devcontainers/features/python:1.7.1": {}, // For pipx (pre-commit, dotenvx)

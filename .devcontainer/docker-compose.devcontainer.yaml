@@ -9,9 +9,6 @@ services:
     build:
       context: .
       dockerfile: ./.devcontainer/Dockerfile
-    volumes:
-      # TODO(update-this): Replace with your repository name
-      - .:/workspaces/my-project-template
     extra_hosts:
       # Access to the host machine from the container using `host.docker.internal`.
       - host.docker.internal:host-gateway
