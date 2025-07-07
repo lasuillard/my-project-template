@@ -17,16 +17,16 @@ help: Makefile  ## Show this help message
 # =============================================================================
 # Common
 # =============================================================================
-init:  ## Initialize the project workspace
-	pre-commit install --install-hooks
-	cp --no-clobber .env.example .env
-.PHONY: init
-
 install:  ## Install deps
 	# TODO(update-this): Update this section to install your project's dependencies
 	uv python install
 	uv sync --frozen
 .PHONY: install
+
+init:  ## Initialize the project workspace
+	pre-commit install --install-hooks
+	cp --no-clobber .env.example .env
+.PHONY: init
 
 update:  ## Update deps and tools
 	pre-commit autoupdate
