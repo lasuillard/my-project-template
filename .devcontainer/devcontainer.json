@@ -14,8 +14,8 @@
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
     "shutdownAction": "stopCompose",
     "features": {
-        "ghcr.io/devcontainers/features/python:1.7.1": {}, // For pipx (pre-commit, dotenvx)
-        "ghcr.io/devcontainers/features/docker-in-docker:2.12.2": {} // Isolated Docker environment from the host machine
+        "ghcr.io/devcontainers/features/python:1": {}, // For pipx (pre-commit, dotenvx)
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {} // Isolated Docker environment from the host machine
         // TODO(update-this): Add features as you need (see https://containers.dev/features for available features)
     },
     // This make the workspace container to run indefinitely, otherwise, based on the image you use,
