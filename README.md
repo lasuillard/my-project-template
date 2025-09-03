@@ -8,7 +8,7 @@
 My project starter template with Dev Container.
 
 > [!Note]
-> This template repository is part of my [blog post](https://blog.lasuillard.me/blog/5) about Dev Container. If you are interested in more -- using Dotfiles for personalization, common tips and recipes, please check my blog!
+> This template repository is part of my [blog post](https://lasuillard.me/blog/post/4) about Dev Container. If you are interested in more -- using Dotfiles for personalization, common tips and recipes, please check my blog!
 
 ## 🚀 Features
 
