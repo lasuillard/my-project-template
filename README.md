@@ -7,9 +7,6 @@
 
 My project starter template with Dev Container.
 
-> [!Note]
-> This template repository is part of my [blog post](https://lasuillard.me/blog/post/4) about Dev Container. If you are interested in more -- using Dotfiles for personalization, common tips and recipes, please check my blog!
-
 ## 🚀 Features
 
 This repository is project template based on GitHub, GitHub Copilot and Visual Studio Code.
