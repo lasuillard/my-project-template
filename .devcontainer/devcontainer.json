@@ -1,6 +1,6 @@
 // https://containers.dev/implementors/json_reference
 {
-    "name": "${localEnv:USER}/${localWorkspaceFolderBasename}",
+    "name": "lasuillard/my-project-template",
     // I recommend to use VS Code's default automatic port forwarding instead
     // "forwardPorts": [],
     "dockerComposeFile": [
