@@ -14,7 +14,7 @@
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
     "shutdownAction": "stopCompose",
     "features": {
-        "ghcr.io/devcontainers/features/python:1": {}, // For pipx (pre-commit, dotenvx)
+        "ghcr.io/devcontainers/features/python:1": {}, // For pipx (pre-commit and more)
         "ghcr.io/devcontainers/features/docker-in-docker:2": {} // Isolated Docker environment from the host machine
         // TODO(update-this): Add features as you need (see https://containers.dev/features for available features)
     },
