@@ -5,7 +5,7 @@ services:
   # You can add any any services you need for your development environment here.
   # But to add dev container only services, edit the `.devcontainer/docker-compose.devcontainer.yaml` file instead.
   localstack:
-    image: localstack/localstack:4
+    image: localstack/localstack:4@sha256:3ebc37595918b8accb852f8048fef2aff047d465167edd655528065b07bc364a
     # Use `profiles` to define which services should run in different development profiles.
     # For example, you can have a `celery` profile for background tasks, which generally includes Redis and Celery Worker.
     # You can change `COMPOSE_PROFILES` environment variable in `.env` files to control which profiles are active,
