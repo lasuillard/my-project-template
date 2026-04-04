@@ -12,7 +12,7 @@ repos:
       - id: end-of-file-fixer
       - id: check-yaml
       - id: check-json
-        exclude: ^(\.devcontainer|\.vscode)
+        exclude: ^(\.devcontainer|\.vscode|renovate\.json)
 
   # TODO(update-this): Update below hooks to met your project's needs
   - repo: local

@@ -25,7 +25,6 @@ install:  ## Install deps
 
 init:  ## Initialize the project workspace
 	pre-commit install --install-hooks
-	cp --no-clobber .env.example .env
 .PHONY: init
 
 update:  ## Update deps and tools
@@ -47,11 +46,15 @@ run:  ## Run application
 ci: lint test  ## Run CI tasks
 .PHONY: ci
 
-format:  ## Run autoformatters
+fmt:  ## Run autoformatters
 	# TODO(update-this): Update this section to run your project's formatters
-	uv run ruff check --fix .
 	uv run ruff format .
-.PHONY: format
+.PHONY: fmt
+
+fix:  ## Run code fixers
+	# TODO(update-this): Update this section to run your project's fixers
+	uv run ruff check --fix .
+.PHONY: fix
 
 lint:  ## Run code linters
 	# TODO(update-this): Update this section to run your project's linters
