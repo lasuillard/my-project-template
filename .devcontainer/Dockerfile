@@ -1,5 +1,5 @@
 # Uses Debian 12 (Bookworm) as the base image
-FROM mcr.microsoft.com/devcontainers/base:1-debian-12@sha256:ce2e9e611939e611b737362c045bb6d3449bb3efb84898525d724aace1737b90
+FROM mcr.microsoft.com/devcontainers/base:2-debian-12@sha256:23fa69fed758b7927c60061317d73baf7d66b9fca5c344e80bce3a940b229af0
 
 RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
     --mount=type=cache,target=/var/lib/apt/lists,sharing=locked \
