@@ -28,7 +28,7 @@ services:
   # This service provides a noVNC web interface to access the workspace container.
   # If you don't need a display, you can remove this service.
   novnc:
-    image: theasp/novnc@sha256:baef5751fdf8416f4729c5cb09ff565b6eabf6079e1919e9aab71eecf1824eac
+    image: theasp/novnc@sha256:a1825caa741473cc5a8814581c04581d0397248ffc1523b4d897190e491a1951
     environment:
       DISPLAY_WIDTH: "${NOVNC_DISPLAY_WIDTH:-1440}"
       DISPLAY_HEIGHT: "${NOVNC_DISPLAY_HEIGHT:-1080}"
