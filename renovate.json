@@ -7,6 +7,7 @@
         {
             // TODO(update-this): Update this list to group the language versions you use in your project
             "groupName": "Python",
+            "matchUpdateTypes": ["major", "minor", "patch"],
             "matchPackageNames": [
                 "python",
                 "mcr.microsoft.com/devcontainers/python"
