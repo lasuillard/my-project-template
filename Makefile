@@ -18,7 +18,7 @@ help: Makefile  ## Show this help message
 # Common
 # =============================================================================
 install:  ## Install deps
-	# TODO(update-this): Update this section to install your project's dependencies
+	# TODO(starter-template): Update this section to install your project's dependencies
 	uv python install
 	uv sync --frozen
 .PHONY: install
@@ -29,12 +29,12 @@ init:  ## Initialize the project workspace
 
 update:  ## Update deps and tools
 	pre-commit autoupdate
-	# TODO(update-this): Update this section to update your project's dependencies
+	# TODO(starter-template): Update this section to update your project's dependencies
 	uv sync --upgrade
 .PHONY: update
 
 run:  ## Run application
-	# TODO(update-this): Update this section to run your project's application
+	# TODO(starter-template): Update this section to run your project's application
 	uv run uvicorn main:app \
 		--host "$$([ -n "$$CONTAINER" ] && echo '0.0.0.0' || echo '127.0.0.1')"
 .PHONY: run
@@ -47,23 +47,23 @@ ci: lint test  ## Run CI tasks
 .PHONY: ci
 
 fmt:  ## Run autoformatters
-	# TODO(update-this): Update this section to run your project's formatters
+	# TODO(starter-template): Update this section to run your project's formatters
 	uv run ruff format .
 .PHONY: fmt
 
 fix:  ## Run code fixers
-	# TODO(update-this): Update this section to run your project's fixers
+	# TODO(starter-template): Update this section to run your project's fixers
 	uv run ruff check --fix .
 .PHONY: fix
 
 lint:  ## Run code linters
-	# TODO(update-this): Update this section to run your project's linters
+	# TODO(starter-template): Update this section to run your project's linters
 	uv run ruff check .
 	uv run ty check .
 .PHONY: lint
 
 test:  ## Run tests
-	# TODO(update-this): Update this section to run your project's tests
+	# TODO(starter-template): Update this section to run your project's tests
 	uv run pytest
 .PHONY: test
 
@@ -72,7 +72,7 @@ test:  ## Run tests
 # Utility
 # =============================================================================
 clean:  ## Clean up the project workspace, removing caches and temporary files
-	# TODO(update-this): Update this section to clean your project's workspace
+	# TODO(starter-template): Update this section to clean your project's workspace
 	rm -rf .mypy_cache/ .pytest_cache/ .ruff_cache/ htmlcov/ .coverage coverage.xml report.xml
 	find . -path '*/__pycache__*' -or -path '*.log*' -delete
 .PHONY: clean

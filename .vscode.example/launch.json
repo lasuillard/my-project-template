@@ -1,7 +1,7 @@
 {
     // Share common debugger configurations with your mates
     "version": "0.2.0",
-    // TODO(update-this): Replace with your application debugger configurations
+    // TODO(starter-template): Replace with your application debugger configurations
     "configurations": [
         {
             "name": "Python Debugger: FastAPI",

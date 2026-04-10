@@ -6,6 +6,6 @@
 # Install pre-commit; https://pre-commit.com
 pipx install pre-commit
 
-# TODO(update-this): uv is used for example Python application for demonstration purposes.
+# TODO(starter-template): uv is used for example Python application for demonstration purposes.
 #                         Update this section to meet your project's requirements.
 pipx install uv

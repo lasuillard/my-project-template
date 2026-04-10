@@ -17,7 +17,7 @@
         "ghcr.io/devcontainers/features/docker-in-docker:2": {
             "moby": false
         } // Isolated Docker environment from the host machine
-        // TODO(update-this): Add features as you need (see https://containers.dev/features for available features)
+        // TODO(starter-template): Add features as you need (see https://containers.dev/features for available features)
     },
     // This make the workspace container to run indefinitely, otherwise, based on the image you use,
     // the container could stop after the command is executed, that must not be a typical behavior
@@ -45,7 +45,7 @@
             "extensions": [
                 "EditorConfig.EditorConfig",
                 "streetsidesoftware.code-spell-checker",
-                // TODO(update-this): Below is just an example configuration. Update it as needed.
+                // TODO(starter-template): Below is just an example configuration. Update it as needed.
                 "astral-sh.ty",
                 "charliermarsh.ruff",
                 "ms-python.debugpy",

@@ -1,6 +1,3 @@
-# You can add `.devcontainer/.env` file and define environment variables there
-# to override the default values below.
-
 services:
   # This is your main development container to work in.
   workspace:
@@ -10,6 +7,7 @@ services:
       context: .
       dockerfile: ./.devcontainer/Dockerfile
     extra_hosts:
+      # TODO(starter-template): If host access from the container is unnecessary, you can remove this line.
       # Access to the host machine from the container using `host.docker.internal`.
       - host.docker.internal:host-gateway
     environment:
@@ -28,6 +26,8 @@ services:
   # This service provides a noVNC web interface to access the workspace container.
   # If you don't need a display, you can remove this service.
   novnc:
+    profiles:
+      - novnc
     image: theasp/novnc@sha256:31fd84fe67c2d42b5a4cdd0f770c6200d774d3382443bcd04831ad1294ea4cbe
     environment:
       DISPLAY_WIDTH: "${NOVNC_DISPLAY_WIDTH:-1440}"

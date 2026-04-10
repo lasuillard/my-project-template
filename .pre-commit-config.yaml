@@ -14,7 +14,7 @@ repos:
       - id: check-json
         exclude: ^(\.devcontainer|\.vscode|renovate\.json)
 
-  # TODO(update-this): Update below hooks to met your project's needs
+  # TODO(starter-template): Update below hooks to met your project's needs
   - repo: local
     hooks:
       - id: ruff-check

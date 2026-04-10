@@ -1,0 +1,14 @@
+// Workspace settings applied for both the host and the dev container.
+{
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "cspell.words": [
+        // Put your custom words here to share with the team.
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "-vv", // This will help you see more detailed output in the test results on test panel
+    ]
+}

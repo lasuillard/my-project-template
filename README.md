@@ -1,69 +1,80 @@
 # my-project-template
 
-<!-- TODO(update-this): Update badges as you need to reflect your project status -->
-[![CI](https://github.com/lasuillard/my-project-template/actions/workflows/ci.yaml/badge.svg)](https://github.com/lasuillard/my-project-template/actions/workflows/ci.yaml)
-[![Dev Container](https://github.com/lasuillard/my-project-template/actions/workflows/devcontainer.yaml/badge.svg)](https://github.com/lasuillard/my-project-template/actions/workflows/devcontainer.yaml)
+<!-- TODO(starter-template): Update badges as you need to reflect your project status -->
 [![codecov](https://codecov.io/gh/lasuillard/my-project-template/graph/badge.svg?token=iKNLWbgUtD)](https://codecov.io/gh/lasuillard/my-project-template)
 
 My project starter template with Dev Container.
 
+<!-- TODO(starter-template): You can remove all lines below once bootstrapped the template, because it would be useless -->
 ## 🚀 Features
 
-This repository is project template based on GitHub, GitHub Copilot and Visual Studio Code.
+This repository is project template for use with GitHub, GitHub Copilot and Visual Studio Code.
 
-- Pre-configured development environment with Dev Container
-
-- Sample instructions, prompts and chat modes for using GitHub Copilot
-
+- Pre-configured development environment with VS Code Dev Container
 - Tips and guidelines for using Dev Containers
-
 - Example Python project for reference
-
-- Basic tools and utilities
-
+- Basic toolchain
   - [`pre-commit`](https://pre-commit.com/) to manage Git hooks
   - `make` to manage project tasks
   - Codecov to upload test results and code coverage
+  - Renovate to manage your dependencies automatically
 
-## 🏁 Getting Started
+### 🤖 Bootstrap Prompt
 
-This project is designed to help you get started with a Dev Container setup quickly.
+You can use the prompt below to bootstrap your project with AI. Update it and pass it to the AI when creating
+the repository, or after creating it from this template.
 
-### 💻 Running Locally
+```markdown
+## Goal
 
-1. Clone the repository:
+Bootstrap this repository into a new project based on the specifications below.
 
-    ```bash
-    git clone https://github.com/lasuillard/my-project-template.git
-    cd my-project-template
-    ```
+This repository started from a template that includes an example Python/FastAPI app. Replace template-specific content with the new project setup.
 
-    Or, create new repository from this template, following GitHub documentation: [Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
+### Considerations
 
-2. Open the project in Visual Studio Code:
+- Replace all placeholders (**my-project-template**) using the real project name and details.
+- Follow instructions in comment blocks that start with **TODO(starter-template)**, then remove those TODO comment blocks.
+- Remove template-specific FastAPI/Python example code and dependencies if they are not part of the requested stack.
+- Keep the initial project minimal. Delete files that are unnecessary for the requested stack.
+- Preserve useful repository automation (for example, CI, lint, test, or devcontainer setup) only if still relevant.
 
-    ```bash
-    code --reuse-window .
-    ```
+### Required Output
 
-3. At Command Palette, select **Dev Containers: Reopen in Container**.
+1. Update project files and configuration to match the requested stack.
+1. Update `README.md` with concise setup and usage instructions.
+1. Provide a short summary of changes made.
+1. Provide next commands to run (install, lint, test, start).
 
-4. Wait for the container to start and then open a terminal in VS Code.
+## Project Details (provided by user)
 
-5. Look around the project structure and explore the provided files.
+### About the project
 
-6. Edit the files to suit your needs. Search `TODO(update-this)` in the codebase and replace it with your own content.
+[Write 1-3 sentences describing the project purpose]
 
-### ☁️ GitHub Codespaces
+### Tech stack
 
-Looking for a quicker way to look around? [GitHub Codespaces](https://github.com/features/codespaces) provides a great environment for exploring this template.
+| Category               | Name                         |
+| ---------------------- | ---------------------------- |
+| Language               | [e.g., Python]               |
+| Framework              | [e.g., FastAPI]              |
+| Package Manager        | [e.g., uv]                   |
+| Code Quality           | [e.g., Ruff + Mypy]          |
+| Unit Testing           | [e.g., pytest]               |
+| End-to-end Testing     | [e.g., Playwright (Node.js)] |
+| Code Coverage Tracking | Codecov                      |
+| Dependency Management  | Renovate                     |
 
-1. Create a new Codespace from this repository.
+## Constraints
 
-2. Wait for the environment to be provisioned.
+- Target OS/dev environment: [e.g., Linux + Dev Container]
+- Runtime version(s): [e.g., Python 3.11+]
+- Deployment target: [e.g., Docker, Vercel, Azure]
+- Any must-have tools or conventions: [optional]
 
-3. Open a terminal in the Codespace.
+## Notes
 
-4. Look around the project structure and explore the provided files.
+- If information is missing, ask focused questions before making major structural decisions.
+- Prefer small, reviewable commits/changes and avoid adding tools not requested by the user.
 
-5. Delete the Codespace when you are done to avoid unnecessary costs.
+```
