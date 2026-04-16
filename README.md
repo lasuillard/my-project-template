@@ -16,8 +16,8 @@ This repository is project template for use with GitHub, GitHub Copilot and Visu
 - Basic toolchain
   - [`pre-commit`](https://pre-commit.com/) to manage Git hooks
   - `make` to manage project tasks
-  - Codecov to upload test results and code coverage
-  - Renovate to manage your dependencies automatically
+  - [Codecov](https://about.codecov.io/) to upload test results and code coverage
+  - [Renovate](https://docs.renovatebot.com/) to manage your dependencies automatically
 
 ### 🤖 Bootstrap Prompt
 
