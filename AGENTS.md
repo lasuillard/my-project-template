@@ -1,4 +1,4 @@
-<!-- TODO(starter-template): Update this file with your project-specific guidelines. -->
+<!-- TODO(bootstrap): Update this file with your project-specific guidelines. -->
 ---
 description: This instruction is used to provide project general guidelines to GitHub Copilot.
 ---

@@ -3,7 +3,7 @@
 .devcontainer
 .vscode
 
-# TODO(starter-template): Visit site and get your own `.gitignore` content based on your project toolchain.
+# TODO(bootstrap): Visit site and get your own `.gitignore` content based on your project toolchain.
 # Created by https://www.toptal.com/developers/gitignore/api/git,linux,macos,windows,visualstudiocode,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=git,linux,macos,windows,visualstudiocode,python
 

@@ -5,7 +5,7 @@
     ],
     "packageRules": [
         {
-            // TODO(starter-template): Update this list to group the language versions you use in your project
+            // TODO(bootstrap): Update this list to group the language versions you use in your project
             "groupName": "Python",
             "matchUpdateTypes": [
                 "major",
