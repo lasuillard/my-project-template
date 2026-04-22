@@ -31,9 +31,8 @@ When bootstrapping is complete, perform the following cleanup steps:
 1. Delete files that are unnecessary for the requested stack.
 2. Delete bootstrap-only content, such as this prompt and any instructions related to bootstrapping. For example:
     - .github/prompts/bootstrap.prompt.md
-    - .github/skills/devcontainer-cli
-3. Rename files if:
-    - renovate.json.example to renovate.json if user wants to use Renovate for dependency updates.
+3. Delete files if:
+    - renovate.json if user do not want to use Renovate for dependency updates.
 4. Update README.md with concise setup and usage instructions specific to the new project.
 
 ### Final check-up
