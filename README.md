@@ -21,7 +21,7 @@ This repository is project template for use with GitHub, GitHub Copilot and Visu
 
 ### 🤖 Bootstrap Prompt
 
-You can use the prompt below to bootstrap your project with AI. Instruct agent to use [#bootstrap.prompt.md](.github/prompts/boostrap.prompt.md) prompt when creating the repository, or after creating it from this template.
+You can use the prompt below to bootstrap your project with AI. Instruct agent to use [#bootstrap.prompt.md](.github/prompts/bootstrap.prompt.md) prompt when creating the repository, or after creating it from this template.
 
 Example of bootstrapping prompt:
 
@@ -41,5 +41,7 @@ Bootstrap project following instructions from #bootstrap.prompt.md with the proj
 - Linting: ktlint and detekt
 - Formatting: ktlint
 - Unit Testing: Kotest
+- Code Coverage: Codecov
 - Deployment: Docker
+- Dependency Updates: Renovate
 ```

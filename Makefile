@@ -1,6 +1,6 @@
 #!/usr/bin/env --split-string make --makefile
 
-MAKEFLAGS += --warn-undefined-variable --no-builtin-rules --silent
+MAKEFLAGS += --warn-undefined-variables --no-builtin-rules --silent
 .DEFAULT_GOAL := help
 .DELETE_ON_ERROR:
 .SUFFIXES:
