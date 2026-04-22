@@ -15,6 +15,14 @@ Bootstrap the project by following these steps:
 1. Replace all placeholders (**my-project-template**) using the real project name and details.
 2. Follow instructions in comment blocks that start with **TODO(bootstrap)**, then remove those TODO comment blocks.
 3. Update template-specific FastAPI/Python example code and dependencies to match the new project requirements.
+4. Cleanup and finalize the project by following the instructions in the "Cleanup" section below.
+5. Perform a final check-up (see "Final check-up" section) to ensure all updates are complete and the project is ready for development.
+
+Keep in mind:
+
+- Initial AGENTS.md file is an example and should be ignored while bootstrapping. It should be updated with project-specific build/test commands and guidelines.
+- Bootstrapping is large and may require multiple iterations. Focus on completing one step at a time, and commit & push changes frequently to avoid losing progress.
+- When updating workflows (.github/workflows/*.yaml), do not pin newly added actions to specific SHA values. Leave it to the dependency management tool.
 
 ### Cleanup
 
@@ -30,6 +38,8 @@ When bootstrapping is complete, perform the following cleanup steps:
 
 ### Final check-up
 
+Once all updates are made, perform a final check-up to ensure:
+
 - Ensure all placeholders have been replaced with project-specific content.
 - Ensure all TODO(bootstrap) comment blocks have been removed.
 - Ensure all template-specific code and dependencies have been updated to match the new project requirements.
@@ -38,11 +48,3 @@ When bootstrapping is complete, perform the following cleanup steps:
     2. Build the container: `devcontainer build --workspace-folder .`
     3. Run the container in background: `devcontainer up --workspace-folder .`
     4. Execute command (`devcontainer exec --workspace-folder . -- make ci`) and ensure it exits successfully.
-
-### Important Notes
-
-Keep in mind:
-
-- Initial AGENTS.md file is an example and should be ignored while bootstrapping. It should be updated with project-specific build/test commands and guidelines.
-- Bootstrapping is large and may require multiple iterations. Focus on completing one step at a time, and commit & push changes frequently to avoid losing progress.
-- When updating workflows (.github/workflows/*.yaml), do not pin newly added actions to specific SHA values. Leave it to the dependency management tool.

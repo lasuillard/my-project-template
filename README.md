@@ -38,10 +38,11 @@ Bootstrap project following instructions from #bootstrap.prompt.md with the proj
 - Language: Kotlin
 - Framework: Spring
 - Package Manager: Gradle
+- Dependency Updates: Renovate
 - Linting: ktlint and detekt
 - Formatting: ktlint
 - Unit Testing: Kotest
-- Code Coverage: Codecov
+- Disable Codecov: No
+- End-to-end Testing: None
 - Deployment: Docker
-- Dependency Updates: Renovate
 ```
