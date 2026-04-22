@@ -4,6 +4,7 @@
 # Common usage is to run initialization commands or scripts.
 
 # Install pre-commit; https://pre-commit.com
+# NOTE: For non-Python projects, base image may not have pipx installed.
 pipx install pre-commit
 
 # TODO(bootstrap): uv is used for example Python application for demonstration purposes.

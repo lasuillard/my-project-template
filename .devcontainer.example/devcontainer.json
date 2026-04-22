@@ -15,6 +15,9 @@
     "shutdownAction": "stopCompose",
     "features": {
         // TODO(bootstrap): Add features as you need (see https://containers.dev/features for available features)
+        // For non-Python projects, you may want install pre-commit as devcontainer feature for covenience
+        // "ghcr.io/devcontainers-extra/features/pre-commit": {}
+        // Docker-in-Docker (DinD) feature is useful when you need to run Docker commands inside the dev container.
         // "ghcr.io/devcontainers/features/docker-in-docker:2": {
         //     "moby": false
         // }
