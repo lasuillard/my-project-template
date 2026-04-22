@@ -34,9 +34,10 @@ When bootstrapping is complete, perform the following cleanup steps:
 - Ensure all TODO(bootstrap) comment blocks have been removed.
 - Ensure all template-specific code and dependencies have been updated to match the new project requirements.
 - Verify dev container builds successfully and runs without errors by performing the following steps (with devcontainer CLI):
-    1. Build the container.
-    2. Run the container in background.
-    3. Execute command (`make ci`) and ensure it exits successfully.
+    1. Install Dev Container CLI if not already installed: `npm install --global @devcontainers/cli`
+    2. Build the container: `devcontainer build --workspace-folder .`
+    3. Run the container in background: `devcontainer up --workspace-folder .`
+    4. Execute command (`devcontainer exec --workspace-folder . -- make ci`) and ensure it exits successfully.
 
 ### Important Notes
 
