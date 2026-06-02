@@ -28,7 +28,7 @@ services:
   novnc:
     profiles:
       - novnc
-    image: theasp/novnc@sha256:31fd84fe67c2d42b5a4cdd0f770c6200d774d3382443bcd04831ad1294ea4cbe
+    image: theasp/novnc@sha256:345ad13780dd08859b1228c3490e25e1522e2c9bd9ea361a2fad04933ab97658
     environment:
       DISPLAY_WIDTH: "${NOVNC_DISPLAY_WIDTH:-1440}"
       DISPLAY_HEIGHT: "${NOVNC_DISPLAY_HEIGHT:-1080}"
