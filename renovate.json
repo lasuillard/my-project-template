@@ -2,20 +2,5 @@
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         "local>lasuillard/renovate-config"
-    ],
-    "packageRules": [
-        {
-            // TODO(bootstrap): Update this list to group the language versions you use in your project
-            "groupName": "Python",
-            "matchUpdateTypes": [
-                "major",
-                "minor",
-                "patch"
-            ],
-            "matchPackageNames": [
-                "python",
-                "mcr.microsoft.com/devcontainers/python"
-            ]
-        }
     ]
 }

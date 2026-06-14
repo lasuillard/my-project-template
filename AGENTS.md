@@ -8,7 +8,6 @@
 - Lint: `uv run ruff check --fix .`
 - Type check: `uv run ty check .`
 - Test: `uv run pytest`
-- Full verify (CI): `make ci`  → runs `make lint` then `make test`
 
 ## Definition of Done
 

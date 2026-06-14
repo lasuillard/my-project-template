@@ -1,18 +1,18 @@
 {
-    // Share common debugger configurations with your mates
-    "version": "0.2.0",
-    // TODO(bootstrap): Replace with your application debugger configurations
-    "configurations": [
-        {
-            "name": "Python Debugger: FastAPI",
-            "type": "debugpy",
-            "request": "launch",
-            "module": "uvicorn",
-            "args": [
-                "main:app",
-                "--reload"
-            ],
-            "jinja": true
-        }
-    ]
+  // Share common debugger configurations with your mates
+  "version": "0.2.0",
+  // TODO(bootstrap): Replace with your application debugger configurations
+  "configurations": [
+    {
+      "name": "Python Debugger: FastAPI",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "main:app",
+        "--reload"
+      ],
+      "jinja": true
+    }
+  ]
 }

@@ -1,18 +1,10 @@
-# Exclude files and directories from pre-commit checks (addition to the default excludes)
-exclude: |
-  (?x)(
-    src/generated/.*
-    | src/third_party/.*
-  )
+fail_fast: true
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
-      - id: check-yaml
-      - id: check-json
-        exclude: ^(\.devcontainer|\.vscode|renovate\.json)
 
   # TODO(bootstrap): Update below hooks to met your project's needs
   - repo: local

@@ -1,11 +1,15 @@
-.env
-.envrc
 .devcontainer
 .vscode
 
-# TODO(bootstrap): Visit site and get your own `.gitignore` content based on your project toolchain.
-# Created by https://www.toptal.com/developers/gitignore/api/git,linux,macos,windows,visualstudiocode,python
-# Edit at https://www.toptal.com/developers/gitignore?templates=git,linux,macos,windows,visualstudiocode,python
+# Created by https://www.toptal.com/developers/gitignore/api/git,linux,macos,python,windows,visualstudiocode,dotenv,direnv
+# Edit at https://www.toptal.com/developers/gitignore?templates=git,linux,macos,python,windows,visualstudiocode,dotenv,direnv
+
+### direnv ###
+.direnv
+.envrc
+
+### dotenv ###
+.env
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
@@ -193,7 +197,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
 .venv
 env/
 venv/
@@ -287,7 +290,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/git,linux,macos,windows,visualstudiocode,python
-
-# Put any files or directories you want to un-ignore in this file.
-!.vscode/*.example
+# End of https://www.toptal.com/developers/gitignore/api/git,linux,macos,python,windows,visualstudiocode,dotenv,direnv
