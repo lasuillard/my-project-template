@@ -12,8 +12,8 @@ This repository started from a template that includes an example Python/FastAPI 
 
 Bootstrap the project by following these steps:
 
-1. Replace all placeholders (**my-project-template**) using the real project name and details.
-2. Follow instructions in comment blocks that start with **TODO(bootstrap)**, then remove those TODO comment blocks.
+1. Replace all placeholders (`my-project-template`) using the real project name and details.
+2. Follow instructions in comment blocks that start with `TODO(bootstrap)`, then remove those TODO comment blocks.
 3. Update template-specific FastAPI/Python example code and dependencies to match the new project requirements.
 4. Cleanup and finalize the project by following the instructions in the "Cleanup" section below.
 5. Perform a final check-up (see "Final check-up" section) to ensure all updates are complete and the project is ready for development.
@@ -42,8 +42,3 @@ Once all updates are made, perform a final check-up to ensure:
 - Ensure all placeholders have been replaced with project-specific content.
 - Ensure all TODO(bootstrap) comment blocks have been removed.
 - Ensure all template-specific code and dependencies have been updated to match the new project requirements.
-- Verify dev container builds successfully and runs without errors by performing the following steps (with devcontainer CLI):
-    1. Install Dev Container CLI if not already installed: `npm install --global @devcontainers/cli`
-    2. Build the container: `devcontainer build --workspace-folder .`
-    3. Run the container in background: `devcontainer up --workspace-folder .`
-    4. Execute command (`devcontainer exec --workspace-folder . -- make ci`) and ensure it exits successfully.
