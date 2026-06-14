@@ -14,8 +14,9 @@ This repository is project template for use with GitHub, GitHub Copilot and Visu
 - Tips and guidelines for using Dev Containers
 - Example Python project for reference
 - Basic toolchain
-  - [`pre-commit`](https://pre-commit.com/) to manage Git hooks
-  - [Just](https://just.systems/) to manage project tasks
+  - [Nix Flakes](https://nix.dev/concepts/flakes.html) for tool management
+  - `pre-commit` ([pre-commit](https://pre-commit.com/)) to manage Git hooks
+  - `just` ([Just](https://just.systems/)) to manage project tasks
   - [Codecov](https://about.codecov.io/) to upload test results and code coverage
   - [Renovate](https://docs.renovatebot.com/) to manage your dependencies automatically
 
