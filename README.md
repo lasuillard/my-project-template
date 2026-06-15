@@ -8,9 +8,9 @@ My project starter template with Dev Container.
 <!-- TODO(bootstrap): You can remove all lines below once bootstrapped the template, because it would be useless -->
 ## 🚀 Features
 
-This repository is project template for use with GitHub, GitHub Copilot and Visual Studio Code.
+This repository is a project template for use with GitHub, GitHub Copilot, and Visual Studio Code.
 
-- Pre-configured development environment with VS Code Dev Container
+- Pre-configured development environment with a VS Code Dev Container
 - Tips and guidelines for using Dev Containers
 - Example Python project for reference
 - Basic toolchain
@@ -18,13 +18,13 @@ This repository is project template for use with GitHub, GitHub Copilot and Visu
   - `pre-commit` ([pre-commit](https://pre-commit.com/)) to manage Git hooks
   - `just` ([Just](https://just.systems/)) to manage project tasks
   - [Codecov](https://about.codecov.io/) to upload test results and code coverage
-  - [Renovate](https://docs.renovatebot.com/) to manage your dependencies automatically
+  - [Renovate](https://docs.renovatebot.com/) to automatically manage your dependencies
 
 ### 🤖 Bootstrap Prompt
 
-You can use the prompt below to bootstrap your project with AI. Instruct agent to use [#bootstrap.prompt.md](.github/prompts/bootstrap.prompt.md) prompt when creating the repository, or after creating it from this template.
+You can use the prompt below to bootstrap your project with AI. Instruct the agent to use the [#bootstrap.prompt.md](.github/prompts/bootstrap.prompt.md) prompt when creating the repository or after creating it from this template.
 
-Example of bootstrapping prompt:
+Example bootstrapping prompt:
 
 ```markdown
 Bootstrap project following instructions from #bootstrap.prompt.md with the project requirements below.
