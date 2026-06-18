@@ -57,7 +57,7 @@ run:
 # Remove temporary files
 clean:
     # TODO(bootstrap): Update this section to clean your project's workspace
-    rm -rf \
+    rm --recursive --force \
         .mypy_cache/ \
         .pytest_cache/ \
         .ruff_cache/ \
