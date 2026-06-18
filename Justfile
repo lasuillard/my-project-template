@@ -19,10 +19,6 @@ alias up := update
 # Development
 # =============================================================================
 
-# Run development server
-run:
-    uv run uvicorn main:app
-
 # Run all checks
 ci: lint test
 
@@ -32,12 +28,6 @@ format:
     uv run ruff format .
 
 alias fmt := format
-
-# Apply autofixes
-fix:
-    # TODO(bootstrap): Update this section to run your project's fixers
-    uv run ruff check --fix .
-    uv run ruff format .
 
 # Run all linters
 lint:
@@ -49,6 +39,16 @@ lint:
 test:
     # TODO(bootstrap): Update this section to run your project's tests
     uv run pytest
+
+# Apply autofixes
+fix:
+    # TODO(bootstrap): Update this section to run your project's fixers
+    uv run ruff check --fix .
+    uv run ruff format .
+
+# Run development server
+run:
+    uv run uvicorn main:app
 
 # =============================================================================
 # Utility
