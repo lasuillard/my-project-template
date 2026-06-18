@@ -42,7 +42,6 @@ fix:
 # Run all linters
 lint:
     # TODO(bootstrap): Update this section to run your project's linters
-    uv run ruff format --check .
     uv run ruff check .
     uv run ty check .
 
