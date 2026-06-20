@@ -20,12 +20,13 @@ alias up := update
 # =============================================================================
 
 # Run all checks
-ci: lint test
+ci: (format "yes") lint test
 
 # Autoformat code
-format:
+[arg("check", long="check", value="yes")]
+format check="no":
     # TODO(bootstrap): Update this section to install your project's dependencies
-    uv run ruff format .
+    uv run ruff format {{ if check == "yes" { "--check" } else { "" } }} .
 
 alias fmt := format
 
