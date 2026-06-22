@@ -15,7 +15,7 @@ dev = [
     "pytest-cov==7.1.0",
     "pytest-sugar==1.1.1",
     "ruff==0.15.16",
-    "ty==0.0.43",
+    "ty==0.0.44",
 ]
 
 [tool.uv]
