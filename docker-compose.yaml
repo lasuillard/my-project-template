@@ -6,7 +6,7 @@
 # TODO(bootstrap): If project need to set up services such as database, cache, message broker, etc., add it as service
 services:
   postgres:
-    image: postgres:18.4-trixie@sha256:4efc78b0491e2d66547dc968c5fed5b0b805d79ed034fc632c4989f372722ea9
+    image: postgres:18-alpine
     ports:
       - ${POSTGRES_HOST:-127.0.0.1}:${POSTGRES_PORT:-5432}:5432
     environment:
