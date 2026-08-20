@@ -1,9 +1,13 @@
-#!/usr/bin/env --split-string uv run python
+from fastapi import FastAPI
+
+app = FastAPI()
 
 
-def main() -> None:
-    print("This is an example application.")
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
 
 
-if __name__ == "__main__":
-    main()
+@app.get("/items/{item_id}")
+def read_item(item_id: int, q: str | None = None):
+    return {"item_id": item_id, "q": q}

@@ -20,6 +20,9 @@ dev = [
 
 [tool.uv]
 
+[tool.fastapi]
+entrypoint = "src.main:app"
+
 [tool.pytest.ini_options]
 addopts = ["--cov", "--cov-report=term"]
 markers = [

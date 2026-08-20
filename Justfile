@@ -49,7 +49,7 @@ fix:
 
 # Run development server
 run:
-    uv run uvicorn main:app
+    uv run fastapi dev
 
 # =============================================================================
 # Utility
