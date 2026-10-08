@@ -10,12 +10,12 @@ dependencies = ["fastapi[standard]==0.141.1"]
 dev = [
     "coverage==7.16.1",
     "factory-boy==3.3.3",
-    "faker==40.38.0",
+    "faker==40.39.0",
     "pytest==9.1.1",
     "pytest-cov==7.1.0",
     "pytest-sugar==1.1.1",
-    "ruff==0.16.7",
-    "ty==0.0.80",
+    "ruff==0.16.8",
+    "ty==0.0.83",
 ]
 
 [tool.uv]
