@@ -9,9 +9,12 @@ install:
 
 # Update deps and tools
 update:
-    pre-commit autoupdate
+    nix flake update
+
     # TODO(bootstrap): Update this section to update your project's dependencies
     uv sync --upgrade
+
+    pre-commit autoupdate
 
 alias up := update
 
